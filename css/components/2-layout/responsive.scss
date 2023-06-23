@@ -1,0 +1,98 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include modal-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  @include modal-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  @include modal-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  @include modal-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  .buttonM {
+    padding: 16px 5px;
+    &__row {
+      .buttonM {
+        width: calc(50% - 6px);
+      }
+    }
+  }
+  @include modal-lg-xlg;
+  @include nav-lg-xlg;
+}
+// 930px
+@include md-lg {
+  @include modal-md-lg;
+}
+// 768px
+@include sm-md {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .buttonM {
+    &__row {
+      width: 100%;
+      max-width: unset;
+      background-color: $main;
+      padding: 16px 0 26px;
+      &.sticky {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        animation-name: appear;
+        animation-duration: 0.4s;
+        background-color: $main;
+        padding: 16px 16px 32px;
+        z-index: 99;
+      }
+      .buttonM {
+        max-width: unset;
+      }
+    }
+  }
+  .inputM {
+    margin: 25px 0 0;
+  }
+  @include modal-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  @include modal-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  @include modal-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  .title6 {
+    font-size: 18px;
+  }
+  .paragraph {
+    font-size: 13px;
+  }
+  .buttonM {
+    padding: 13px 0;
+    border-width: 1px;
+    &__row {
+      .buttonM {
+        width: calc(50% - 3px);
+      }
+    }
+  }
+  @include modal-xxsm-xsm;
+  @include nav-xxsm-xsm;
+
+}
+// 390px
+@include xxxsm-xxsm {
+  // @include modal-xxxsm-xxsm;
+}
